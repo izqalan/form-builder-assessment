@@ -81,6 +81,7 @@ const FormView = () => {
                     className="p-2 rounded tracking-wide bg-gray-200 w-full"
                     name={field.label}
                     placeholder={field.fieldType}
+                    type={field.fieldType}
                     ref={register({
                       required: 'input required',
                       pattern: inputPattern(field.fieldType),
