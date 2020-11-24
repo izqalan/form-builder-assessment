@@ -1,6 +1,6 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable react/jsx-one-expression-per-line */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faMeh } from '@fortawesome/free-solid-svg-icons';
@@ -17,6 +17,11 @@ const FormBuilder = () => {
   const formDataSelector = useSelector(selectorForm);
   const history = useHistory();
   const goToFormView = () => history.push('/form');
+
+  useEffect(() => {
+    dispatch({ type: 'FETCH_FORM_REQUEST' });
+  });
+
   const onSubmit = (values, e) => {
     dispatch(addForm(values));
     e.target.reset();
