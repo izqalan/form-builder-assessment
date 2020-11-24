@@ -7,6 +7,8 @@
 
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png" height="20px" width="20px"> **State management of choice**
 
+Font Family: [Rubik](https://fonts.google.com/specimen/Rubik?query=Rubik)
+
 # Form Builder
 
 ### widescreen view
@@ -15,6 +17,32 @@
 ### mobile view
 ![main mobile screen](https://github.com/izqalan/form-builder-assessment/blob/master/designs/main_mobile.png)
 ![form mobile screen](https://github.com/izqalan/form-builder-assessment/blob/master/designs/form_mobile.png)
+
+### Screens & Components
+[Go To Directory](https://github.com/izqalan/form-builder-assessment/tree/master/src/components)
+```
+├── src
+│   ├── components
+│   │   ├── App.js
+│   │   ├── Card
+│   │   │   └── ListCard.js
+│   │   ├── FormBuilder
+│   │   │   └── index.js
+│   │   └── FormView
+│   │       └── index.js
+```
+### Redux
+[Go To Directory](https://github.com/izqalan/form-builder-assessment/tree/master/src/redux)
+```
+├── src
+│   ├── redux
+│   │   └── formBuilder
+│   │       └── index.js
+```
+### Styles & Tailwind
+[Go to Styles Directory](https://github.com/izqalan/form-builder-assessment/tree/master/src/styles)
+
+[Custom TailwinddCss config](https://github.com/izqalan/form-builder-assessment/blob/master/tailwind.config.js)
 
 ## Project Structure
 ```
