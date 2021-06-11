@@ -22,7 +22,9 @@ const FormBuilder = () => {
     e.target.reset();
   };
   const removeField = (id) => {
+    console.log(id);
     const index = formDataSelector.findIndex((fd) => fd.id === id);
+    console.log(index);
     dispatch(removeForm(index));
   };
 
